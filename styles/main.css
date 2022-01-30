@@ -4,25 +4,15 @@
   box-sizing: border-box;
 }
 
-:root {
-  --loc-card-h: 305px;
-  --loc-card-w: 420px;
-  --loc-h: 300px;
-  --loc-w: 400px;
-}
 html,
 body {
   width: 100%;
   height: 100vh;
   background-color: black;
   color: white;
+  font-family: 'Helvetica', 'Helvetica Neue', Helvetica, Arial, sans;
   }
 
- .theme-image {
-   display: flex;
-   justify-content: center;
-   margin-bottom: 3rem;
- }
 .navbar {
   width: 100%;
   /* border: solid white 2px; */
@@ -34,39 +24,6 @@ body {
   /* background-color: white; */
 }
 
-.coming-soon {
-  width: 100%;
-  height: 15vh;
-  color: #bbb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Helvetica", sans-serif;
-  font-style: italic;
-  font-size: xx-large;
-}
-
-.location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.loc-card {
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-  filter: blur(1rem);
-  width: var(--loc-card-w);
-  height: var(--loc-card-h);
-  position: absolute;
-}
-
-.loc {
-  z-index: 5;
-  width: var(--loc-w);
-  height: var(--loc-h);
-}
 
 /* ultra small */
 /* Extra small devices (phones, 600px and down) */
@@ -94,14 +51,9 @@ body {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  :root {
-    --loc-card-h: 520px;
-    --loc-h: 500px;
-    --loc-card-w: 820px;
-    --loc-w: 800px;
-  }
-}
+/* @media only screen and (min-width: 768px) {
+  
+} */
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
